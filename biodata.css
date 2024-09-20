@@ -1,0 +1,143 @@
+ body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #333;
+            margin-top: 20px;
+        }
+
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            padding-top: 60px;
+        }
+
+        .picture-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+        }
+
+        .picture-section img {
+            border: 2px solid #ccc;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .custom-upload-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .custom-upload-btn:hover {
+            background-color: #0056b3;
+        }
+
+
+        .form-control, .form-select {
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+        }
+
+
+        .form-label {
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        button[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        button[type="submit"]:focus {
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.25);
+        }
+
+        /* para pag validate sa error sa form */
+        .invalid-feedback {
+            color: #dc3545;
+            font-size: 0.9rem;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+        }
+
+        /* para sa margin*/
+        .mb-3 {
+            margin-bottom: 1.5rem;
+        }
+
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+
+        @media (max-width: 768px) {
+            .picture-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .picture-section img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+        #profilePicture {
+            width: 150px;
+            height: 150px; 
+            object-fit: cover; 
+        }
+        
